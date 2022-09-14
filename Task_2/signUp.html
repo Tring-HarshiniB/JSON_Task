@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./CSS/styleSheet.css">
+    <script src="./JS/jScript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h1>Sign Up</h1></div>
+        <form class="form" retutn="false"; onsubmit="addData(); showData();" onload="showData();">
+            <div class="table-content">
+                    <div class="input-box">
+                                <label class="details">Email id:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                                <label for="fname" class="details">First name:</label>
+                                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="input-box">
+                                <label for="lname" class="details">Last name:</label>
+                                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+                    </div>
+                    <div class="input-box">
+                                <label for="mobnum" class="details">Mobile number:</label>
+                                <input type="text" id="mobnum" name="mobnum" placeholder="Enter your mobile number " maxlength="10" required>
+                    </div>
+                    <div class="input-box">
+                                <label for="dob" class="details">Date of Birth:</label>
+                                <input type="date" id="dob" name="dob">
+                    </div>
+                    <div class="gender-radio-btn">
+                                <label for="gender" class="gender-title">Gender:</label>
+                                <div class="category">
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <span>Male</span>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <span>Female</span>
+                                </div>
+                    </div>
+                    <div class="check-box">
+                                <input type="checkbox" id="check">
+                                <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
+                    </div>
+                    <div class="button">
+                                <input type="submit" value="Submit" class="submit">
+                    </div>
+                </table>
+            </div>
+        </form>
+        <div class="table_container">
+        <table class="table2" border="1" id="table2">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Email Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Mobile Number</th>
+                    <th>Date of Birth</th>
+                    <th>Gender</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="table-body-data">
+    
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <script>showData();</script>
+</body>
+</html>
